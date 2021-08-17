@@ -1,0 +1,19 @@
+# This file contains general metadata about the project.
+
+@prefix : <http://usefulinc.com/ns/doap#>.
+
+`Lingua-Poetry-Haiku-Finder`
+	:programming-language "Perl" ;
+	:shortdesc            "find poetry in the least poetic places";
+	:homepage             <https://metacpan.org/release/Lingua-Poetry-Haiku-Finder>;
+	:download-page        <https://metacpan.org/release/Lingua-Poetry-Haiku-Finder>;
+	:bug-database         <http://rt.cpan.org/Dist/Display.html?Queue=Lingua-Poetry-Haiku-Finder>;
+	:repository           [ a :GitRepository; :browse <https://github.com/tobyink/p5-lingua-poetry-haiku-finder> ];
+	:created              2021-08-16;
+	:license              <http://dev.perl.org/licenses/>;
+	:maintainer           cpan:TOBYINK;
+	:developer            cpan:TOBYINK.
+
+<http://dev.perl.org/licenses/>
+	dc:title  "the same terms as the perl 5 programming language system itself".
+
