@@ -148,8 +148,9 @@ Lingua::Poetry::Haiku::Finder - find poetry in the least poetic places
 
   use Lingua::Poetry::Haiku::Finder;
   
-  my $filename = '/usr/share/common-licenses/GPL-2';
-  my $finder   = 'Lingua::Poetry::Haiku::Finder'->from_filename( $filename );
+  my $finder = 'Lingua::Poetry::Haiku::Finder'->from_filename(
+    '/usr/share/common-licenses/GPL-2'
+  );
   
   for my $poem ( @{ $finder->haikus } ) {
     print "$poem\n\n";
@@ -157,6 +158,38 @@ Lingua::Poetry::Haiku::Finder - find poetry in the least poetic places
 
 =head1 DESCRIPTION
 
+This module will scan a string (which may be read from a file) for consecutive
+sentences which sound like haikus.
+
+It uses L<Lingua::EN::Syllable>, which provides imperfect syllable counts, so
+they may not always work. It will also occasionally split lines as 6/7/4 or
+similar, to avoid hyphenating a word and splitting it onto multiple lines.
+
+=head2 Constructors
+
+=over
+
+=item C<< from_text( $string ) >>
+
+=item C<< from_filehandle( $ref ) >>
+
+=item C<< from_filename( $string ) >>
+
+=back
+
+=head2 Methods
+
+=over
+
+=item C<< haikus >>
+
+Returns an arrayref of strings, each string being one haiku. Lines of each
+haiku are joined using "\n".
+
+=back
+
+There are other methods and helper classes, but you probably don't need to
+know about them.
 
 =head1 BUGS
 
