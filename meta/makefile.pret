@@ -7,7 +7,7 @@
 	:runtime-requirement    [ :on "perl 5.012"^^:CpanId ];
 	:runtime-requirement    [ :on "Moo 2.000000"^^:CpanId ];
 	:runtime-requirement    [ :on "Types::Standard 1.010000"^^:CpanId ];
-	:runtime-requirement    [ :on "List::Util"^^:CpanId ];
+	:runtime-requirement    [ :on "List::Util 1.26"^^:CpanId ];
 	:runtime-requirement    [ :on "namespace::autoclean"^^:CpanId ];
 	:runtime-requirement    [ :on "Lingua::Sentence"^^:CpanId ];
 	:runtime-requirement    [ :on "Lingua::EN::Syllable"^^:CpanId ];
