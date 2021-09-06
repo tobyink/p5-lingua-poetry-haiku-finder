@@ -4,3 +4,8 @@
 	issued  2021-08-17;
 	label   "Initial release".
 
+`Lingua-Poetry-Haiku-Finder 0.002 cpan:TOBYINK`
+	issued  2021-09-06;
+	changeset [
+		item "Bundle a script `haiku-find`."^^Addition;
+	].
